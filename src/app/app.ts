@@ -1,6 +1,5 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Counter } from './components/counter/counter';
 import { Navbar } from './components/navbar/navbar';
 
 @Component({
@@ -10,5 +9,5 @@ import { Navbar } from './components/navbar/navbar';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('ExercicesAngular');
+  protected readonly title = signal('exercices');
 }

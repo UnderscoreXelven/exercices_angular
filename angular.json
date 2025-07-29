@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ExercicesAngular": {
+    "exercices": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -61,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ExercicesAngular:build:production"
+              "buildTarget": "exercices:build:production"
             },
             "development": {
-              "buildTarget": "ExercicesAngular:build:development"
+              "buildTarget": "exercices:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -93,5 +93,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "3b53d0f5-2ee7-44ef-bd65-b40e0997a605"
   }
 }
