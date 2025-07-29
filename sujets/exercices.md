@@ -23,3 +23,20 @@
 - Créer un pipe personnalisé, qui prend en paramètre une liste, et un argument de type string 'order' ('asc' ou 'desc')
 - Utiliser ce pipe sur la liste de série pour la trier
 - Ajouter 2 boutons pour modifier l'ordre du tableau
+
+## Exercice 4 :
+
+- Créer un composant librairie, et sa route
+- Dans ce composant, afficher une liste de livre
+    - title
+    - author
+    - isRead
+- quand le livre est lu, on affiche 👍 ou 👎 (windows + . pour ajouter l'emoji)
+- Utiliser un pipe perso pour la gestion de l'emoji
+- Ajouter un bouton pour marquer un livre lu / pas lu
+
+## Exercice 5 :
+
+- Dans le composant librairie, Créer un formulaire pour ajouter un livre
+- par défaut la valeur de isRead sera false
+- Ajouter le nouveau livre à la liste books
