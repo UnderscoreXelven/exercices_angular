@@ -40,3 +40,17 @@
 - Dans le composant librairie, Créer un formulaire pour ajouter un livre
 - par défaut la valeur de isRead sera false
 - Ajouter le nouveau livre à la liste books
+
+## Exercice 6 :
+
+- Créer un nouveau composant et sa route
+- Dans le composant, créer un formulaire réactif pour créer un pokemon
+    - Nom
+    - Description
+    - Liste de types
+    - liste d'attaques
+        - nom
+        - description
+        - dégats
+        - type
+    

@@ -1,0 +1,41 @@
+<section>
+    <h2>FormGroup</h2>
+
+    <form [formGroup]="pokemon_form" (ngSubmit)="savePokemon()">
+        <div>
+            <label for="pokemon-name">Nom du pokémon</label>
+            <input type="text" name="pokemon-name" formControlName="name">
+        </div>
+        <div>
+            <label for="pokemon-description">Description du pokémon</label>
+            <input type="textarea" name="pokemon-description" formControlName="description">
+        </div>
+        <fieldset formGroupName="ability">
+            <div>
+                <label for="ability-name">Nom de l'attaque</label>
+                <input type="text" name="ability-name" formControlName="name">
+            </div>
+            <div>
+                <label for="ability-description">Description de l'attaque</label>
+                <input type="text" name="ability-description" formControlName="description">
+            </div>
+            <div>
+                <label for="ability-damage">Montant de dégâts</label>
+                <input type="text" name="ability-damage" formControlName="damage">
+            </div>
+            <div>
+                <label for="ability-type">Type de l'attaque</label>
+                <input type="text" name="ability-type" formControlName="type">
+            </div>
+        </fieldset>
+        <fieldset formArrayName="types">
+            <legend>Types du pokémon</legend>
+            @for (control of types.controls; track control; let i = $index){
+                <label [for]="'type' + $index">Type {{$index + 1}}</label>
+                <input type="text" [name]="'type' + $index" [formControlName]="$index">
+            }
+            <button type="button" (click)="addType()">Ajouter un type</button>
+        </fieldset>
+        <button>Sauvegarder</button>
+    </form>
+</section>

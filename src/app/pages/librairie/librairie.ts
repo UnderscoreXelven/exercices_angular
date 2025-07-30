@@ -18,11 +18,11 @@ export class Librairie {
   }
 
   books : Book[] = [
-    {title: "Livre 1", author: "Autheur 1", isRead: true},
-    {title: "Livre 2", author: "Autheur 1", isRead: false},
-    {title: "Livre 3", author: "Autheur 2", isRead: true},
-    {title: "Livre 4", author: "Autheur 1", isRead: false},
-    {title: "Livre 5", author: "Autheur 2", isRead: true},
+    {title: "Livre 1", author: "Auteur 1", isRead: true},
+    {title: "Livre 2", author: "Auteur 1", isRead: false},
+    {title: "Livre 3", author: "Auteur 2", isRead: true},
+    {title: "Livre 4", author: "Auteur 1", isRead: false},
+    {title: "Livre 5", author: "Aut eur 2", isRead: true},
   ]
 
   toggleIsRead(book: Book) : void {
@@ -38,7 +38,7 @@ export class Librairie {
   
     this.books.push(newBook);
   
-    //Reset le formulaire en créant un nouvel objet vide
+    //Reset le formulaire en mettant les champs à vide
     this.book = {
       title: '',
       author: '',
