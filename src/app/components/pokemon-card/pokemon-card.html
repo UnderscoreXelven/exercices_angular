@@ -1,0 +1,16 @@
+<div class="pokemon-card">
+    <h3>{{ pokemon.name }}</h3>
+    <p><strong>Description :</strong> {{ pokemon.description }}</p>
+  
+    <h4>Attaque</h4>
+    <p>
+      <strong>Nom :</strong> {{ pokemon.ability.name }}<br>
+      <strong>Description :</strong> {{ pokemon.ability.description }}<br>
+      <strong>Dégâts :</strong> {{ pokemon.ability.damage }}<br>
+      <strong>Type :</strong> {{ pokemon.ability.type }}
+    </p>
+  
+    <p><strong>Types :</strong> {{ pokemon.types.join(', ') }}</p>
+  
+    <button (click)="onDelete()">Supprimer</button>
+</div>  

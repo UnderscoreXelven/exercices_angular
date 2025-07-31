@@ -54,3 +54,11 @@
         - dégats
         - type
     
+## Exercice 7 :
+
+- Reprendre pokemon
+- Créer un composant pokemon-card, ce composant prendra un pokemon via les props et affichera une carte pokemon
+- Afficher ensuite avec une boucle les pokemons de la liste
+- Créer un bouton dans pokemon-card permettant de supprimer un pokemon
+    - Le bouton doit envoyer un événement au parent
+    - Le parent doit récupérer cet événement pour supprimer le pokemon de la liste (vous pouvez ajouter un id au type pokemon pour le retrouver facilement)
