@@ -1,7 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-// Re-déclaration ici (sinon tu peux l'importer de pokemon.ts si besoin)
 interface Ability {
   name: string;
   description: string;
